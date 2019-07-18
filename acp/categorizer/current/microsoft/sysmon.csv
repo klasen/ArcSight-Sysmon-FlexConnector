@@ -2,7 +2,7 @@ event.deviceEventClassId,set.event.categoryObject,set.event.categoryBehavior,set
 SysmonTask-SYSMON_CREATE_PROCESS,/Host/Resource/Process,/Execute/Start,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_FILE_TIME,/Host/Resource/File,/Modify/Attribute,,/Success,/Suspicious,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_NETWORK_CONNECT,/Host/Application/Service,/Communicate,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_SERVICE_STATE_CHANGE,/Host/Application/Service,/Check,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_SERVICE_STATE_CHANGE,/Host/Application/Service,/Execute,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_PROCESS_TERMINATE,/Host/Resource/Process,/Execute/Stop,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_DRIVER_LOAD,/Host/Resource/Process,/Execute/Start,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_IMAGE_LOAD,/Host/Resource/Process,/Execute/Start,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
@@ -10,15 +10,15 @@ SysmonTask-SYSMON_CREATE_REMOTE_THREAD,/Host/Resource/Process,/Execute/Start,,/S
 SysmonTask-SYSMON_RAWACCESS_READ,/Host/Resource/Storage Device,/Access,/Information Leak/Unauthorized Access,/Success,/Suspicious,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_ACCESS_PROCESS,/Host/Resource/Process,/Access,/Information Leak/Unauthorized Access,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_FILE_CREATE,/Host/Resource/File,/Create,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_REG_KEY,/Host/Resource/Registry,/Modify/Configuration,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_REG_SETVALUE,/Host/Resource/Registry,/Modify/Configuration,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_REG_NAME,/Host/Resource/Registry,/Modify/Configuration,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_REG_KEY,/Host/Resource/Registry,/Create,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_REG_SETVALUE,/Host/Resource/Registry,/Modify/Content,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_REG_NAME,/Host/Resource/Registry,/Modify/Attribute,,/Success,/Informational,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_FILE_CREATE_STREAM_HASH,/Host/Resource/File,/Modify/Attribute,/Covert Channel,/Success,/Suspicious,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_SERVICE_CONFIGURATION_CHANGE,/Host/Application/Service,/Modify/Configuration,,/Success,/Informational/Warning,/Operating System,/Operating System,,Source
 SysmonTask-SYSMON_CREATE_NAMEDPIPE,/Host/Resource/Interface/Tunnel,/Create,/Covert Channel,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_CONNECT_NAMEDPIPE,/Host/Resource/Interface/Tunnel,/Communicate,/Covert Channel,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_WMI_FILTER,/Host/Resource/File,/Create,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_WMI_CONSUMER,/Host/Resource/File,/Create,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
-SysmonTask-SYSMON_WMI_BINDING,/Host/Resource/File,/Access,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_WMI_FILTER,/Host/Resource,/Create,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_WMI_CONSUMER,/Host/Resource,/Create,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
+SysmonTask-SYSMON_WMI_BINDING,/Host/Resource,/Access/Start,,/Success,/Informational/Warning,/Operating System,/Operating System,/Attack Lifecycle/Install,Source
 SysmonTask-SYSMON_ERROR,/Host/Application,/Execute,,/Failure,/Informational/Error,/Operating System,/Operating System,,Source
 SysmonTask-DNS_QUERY,/Host/Application/Service,/Communicate/Query,,/Success,/Informational,Operating System,/Operating System,,Source
